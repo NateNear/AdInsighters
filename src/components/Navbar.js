@@ -29,15 +29,15 @@ const Navbar = () => {
     },
     {
         id:2,
-        link: "about",
+        link: "buisness need",
     },
     {
         id:3,
-        link: "portfolio",
+        link: "potential",
     },
     {
         id:4,
-        link: "experience",
+        link: "details",
     },
     {
         id:5,
@@ -49,7 +49,7 @@ const Navbar = () => {
     <div className={`nav ${show && "nav_dark"}`}>
     <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed backdrop-filter backdrop-blur-lg bg-opacity-30'>
         <div>
-            <h1 className='text-5xl font-signature ml-2'>Hari</h1>
+            <h1 className='text-4xl font-signature ml-2'>Null-Pointers</h1>
         </div>
         {/* FOR NORMAL SCREENS */}
         <ul className="hidden md:flex">
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <li
                 key={id}
                 className="px-4 cursor-pointer capitalize font-medium text-green-300 hover:scale-105 duration-200">
-                    <Link to={link} smooth duration={800}>{link}</Link>
+                    {<Link to={link} smooth duration={800}>{link}</Link>}
                 </li>
             ))}
             </ul>
